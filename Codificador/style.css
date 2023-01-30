@@ -7,8 +7,8 @@
 }
 
 .logoAlura{
-    margin-left: 10px;
-    padding-top: 10px;
+    margin-left: 2%;
+    padding-top: 2%;
     width: 2%;
 }
 
@@ -23,6 +23,7 @@ main{
     color: #0A3871;
     margin-top: 90px;
     text-transform: lowercase;
+    resize:none;
 }
 
 ::placeholder{
@@ -37,6 +38,7 @@ main{
     background: white;
     background-image: url(./imagens/boneco.png);
     background-repeat: no-repeat;
+    background-position: center;
     border: none;
     border-radius: 24px;
     color: #0A3871;
@@ -44,13 +46,110 @@ main{
     margin-top: 20px;
     padding-left: 20px;
     position: fixed;
+    width: 30%;
+    height: 80%;
+    right: 2%;
+    resize:none;
 }
 
 .textoSaida:focus{
     outline: none;
 }
 
+.legendas{
+    background: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    position: absolute;
+    right: 6%;
+    top: 546px;
+}
+
+.primeiraLegenda{
+    margin: 0;
+    background: none;
+    vertical-align: top;
+    width: 336px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 120%;
+    text-align: center;
+    color: #343A40;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.segundaLegenda{
+    margin: 0;
+    background: none;
+    vertical-align: top;
+    width: 336px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
 .botoes{
     display: flex;
     margin-top: 18px;
+}
+
+.btn-desencriptar{
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color:#0A3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px;
+}
+
+.btn-encriptar{
+    background-color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color:white;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+}
+
+.btn-copiar{
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color:#0A3871;
+    cursor: pointer;
+    height: 67px;
+    right: 6%;
+    margin-top: 498px;
+    position: absolute;
+    width: 336px;
+}
+
+.informação h6{
+    color: #495057;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+}
+
+.informação img{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
 }

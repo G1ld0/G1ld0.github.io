@@ -17,17 +17,22 @@
         <section>
             <textarea class="textoEntrada" cols="41" rows="4" placeholder="Digite seu texto"></textarea>
             <div class="informação">
-                <h6>Apenas letras minúsculas e sem acento</h6>
+                <h6><img src="./imagens/botãoInf.png" alt="Icone de informação">Apenas letras minúsculas e sem acento</h6>
             </div>
             <div class="botoes">
-                <button class="btn-encriptar">Criptografar</button>
-                <button class="btn-desencriptar">Descriptografar</button>
+                <button class="btn-encriptar" onclick="btnEncripitar()">Criptografar</button>
+                <button class="btn-desencriptar" onclick="btnDesencripitar()">Descriptografar</button>
             </div>
         </section>
         <section>
             <textarea class="textoSaida" cols="70" rows="10"></textarea>
-            <button class="btn-copiar">Copiar</button>
+            <div class="legendas">
+                <h6 class="primeiraLegenda">Nenhuma mensagem encontrada</h6>
+                <h6 class="segundaLegenda">Digite um texto que você deseja criptografar ou descriptografar</h6>
+            </div>
+            <button class="btn-copiar" onclick="btnCopiar()">Copiar</button>
         </section>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
