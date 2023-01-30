@@ -6,6 +6,10 @@
     line-height: 150%;
 }
 
+.titulo {
+    display: inline;
+}
+
 .logoAlura{
     margin-left: 2%;
     padding-top: 2%;
@@ -21,9 +25,10 @@ main{
 .textoEntrada{
     border: none;
     color: #0A3871;
-    margin-top: 90px;
     text-transform: lowercase;
     resize:none;
+    top: 20%;
+    position: fixed;
 }
 
 ::placeholder{
@@ -43,13 +48,13 @@ main{
     border-radius: 24px;
     color: #0A3871;
     margin-left: 98px;
-    margin-top: 20px;
     padding-left: 20px;
     position: fixed;
     width: 30%;
-    height: 80%;
+    height: 90%;
     right: 2%;
     resize:none;
+    top: 5%;
 }
 
 .textoSaida:focus{
@@ -63,7 +68,7 @@ main{
     align-items: flex-start;
     padding: 0px;
     position: absolute;
-    right: 6%;
+    right: 6.5%;
     top: 546px;
 }
 
@@ -113,8 +118,11 @@ main{
     color:#0A3871;
     cursor: pointer;
     height: 67px;
-    margin-left: 30px;
+    margin-left: 15px;
     width: 328px;
+    position: absolute;
+    top: 83%;
+    left: 30%;
 }
 
 .btn-encriptar{
@@ -125,6 +133,8 @@ main{
     cursor: pointer;
     height: 67px;
     width: 328px;
+    position: absolute;
+    top: 83%;
 }
 
 .btn-copiar{
@@ -133,10 +143,15 @@ main{
     color:#0A3871;
     cursor: pointer;
     height: 67px;
-    right: 6%;
-    margin-top: 498px;
+    right: 6.5%;
+    top: 83%;
     position: absolute;
     width: 336px;
+}
+
+.informação {
+    position: absolute;
+    top: 74%;
 }
 
 .informação h6{

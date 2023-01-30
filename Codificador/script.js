@@ -1,8 +1,12 @@
 const textoEntrada = document.querySelector(".textoEntrada");
 const textoSaida = document.querySelector(".textoSaida");
+const legendas = document.querySelector(".legendas");
 
 function btnEncripitar(){
-    textoSaida.style.backgroundImage = "none";
+    if(textoEntrada.value != ""){
+        legendas.style.visibility = "hidden";
+        textoSaida.style.backgroundImage = "none";
+    }
     textoSaida.value = encriptar(textoEntrada.value);
     textoEntrada.value = "";
 }
@@ -21,7 +25,10 @@ function encriptar(stringEncriptada){
 }
 
 function btnDesencripitar(){
-    textoSaida.style.backgroundImage = "none";
+    if(textoEntrada.value != ""){
+        legendas.style.visibility = "hidden";
+        textoSaida.style.backgroundImage = "none";
+    }
     textoSaida.value = desencriptar(textoEntrada.value);
     textoEntrada.value = "";
 }
